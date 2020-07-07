@@ -1,0 +1,12 @@
+:root {
+    --white: #ffffff;
+    --blue: #3155A5;
+    --green: ;
+    --grey: #E8E8E8;
+    --light-grey: #8C8C8C;
+    --black: #000000;
+}
+
+.disabled {
+    background-color: var(--light-grey);
+}

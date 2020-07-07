@@ -1,0 +1,129 @@
+.menu-list{
+	padding:5px;
+	margin: 0;
+	list-style: none;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+
+}
+.menu-list__elem {
+    border-right: 1.5px solid #fafafb;
+    padding: 6px 10px;
+    font-size: 14px;
+	text-transform:uppercase;
+}
+.menu-list__elem a {
+	color: var(--black);
+}
+.menu-list__elem:hover {
+    text-decoration: underline;
+	cursor: pointer;
+}
+.menu-list .menu-list__elem:last-child {
+	border-right: none;
+}
+
+/* MOBILE MENU */
+
+#mobile-menu{
+	position: fixed;
+	top:0;
+	width: 100%;
+	height: 100%;
+	background-color:#0abe38;
+	display: none;
+	z-index: 12;
+}
+
+#mobile-menu .menu-list{
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	padding: 50px 25px;        
+}
+.menu-list .menu-list__link {
+color: #fff;
+}
+.menu-list .menu-list__link:hover {
+	text-decoration: underline;
+}
+#mobile-menu .menu-list .menu-list__elem{
+	border-bottom: 1px solid #fff;
+	border-right: none;
+	color:#fff;
+	font-size: 16px;
+}
+
+#mobile-menu .menu-list .menu-list__elem:first-child{
+	border-top:1px solid #fff; 
+}
+.close {
+    position: absolute;
+    z-index: 11;
+    right: -2px;
+    top: -4px;
+    width: 32px;
+    height: 32px;
+    opacity: 1;
+}
+.close:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+.close:before, .close:after {
+    position: absolute;
+    left: 15px;
+    content: ' ';
+    height: 33px;
+    width: 2px;
+    background-color: #fff;
+}
+.close:before {
+-webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+}
+.close:after {
+-webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+}
+
+
+/* SMALL MENU */
+
+.main-menu {
+	width: 235px;
+	background-color: var(--grey);
+	height: 100%;
+	padding: 35px;
+}
+	.main-menu__list{
+		list-style: none;
+		padding: 0px;
+	}
+	.main-menu__list.small {
+		padding-left: 15px;
+	}
+	.main-menu__elem{
+		font-family: "Circe";
+		font-style: normal;
+		font-weight: 800;
+		font-size: 16px;
+		line-height: 35px;
+
+		text-transform: uppercase;
+
+
+	}
+	.main-menu__elem a {
+		color: #7B7B7B;
+	}
+	.main-menu__elem .active {
+		color: #14347B;
+	}

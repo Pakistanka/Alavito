@@ -1,0 +1,137 @@
+.dialog {
+    display: flex;
+    flex-direction: column;
+}
+
+.dialog__title {
+    font-family: "Circe";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 23px;
+    line-height: 34px;
+
+    text-align: left;
+    text-transform: uppercase;
+
+    color: #14347B;
+    margin: 10px 0px;
+}
+
+.dialog-area {
+    border: 1px solid #ccc;
+    overflow-y: auto;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    background: #E8E8E8;
+}
+
+    .dialog-area .hesender,
+    .dialog-area .imsender {
+        font-size: 16px;
+        margin: 10px 20px;
+        display: flex;
+    }
+
+    .dialog-area .hesender {
+        justify-content: flex-start;
+    }
+
+    .dialog-area .imsender {
+        justify-content: flex-end;
+    }
+
+        .messages {
+            width: auto;
+            max-width: 60%;
+            padding: 15px;
+            text-align: justify;
+            border-radius: 5px;
+            position: relative;
+
+            color: #293135;
+            background: #C4C4C4;
+            border-radius: 15px;
+        }
+        .imsender .messages::before {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 0;
+            top: 0px;
+            right: -15px;
+            border: 15px solid;
+            border-color: #C4C4C4 transparent transparent #C4C4C4;
+        }
+        .hesender .messages::before{
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 0;
+            top: 0px;
+            left: -15px;
+            border: 15px solid;
+            border-color: #C4C4C4 #C4C4C4 transparent transparent ;
+        }
+
+
+.dialog-textarea textarea {
+    margin: 10px 0;
+    width: 100%;
+    resize: none;
+}
+
+.dialog-form .form-string {
+    width: 100%;
+}
+
+.chat__date {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 10px;
+}
+.sent-date {
+    margin-left: 15px;
+}
+.chat__date .sent-date,
+.chat__date time {
+    font-family: "Circe";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+
+    text-align: center;
+}
+
+.dialog__textares--field {
+    background: #E8E8E8;
+    padding: 10px;
+
+    font-family: "Circe";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 21px;
+
+    color: #000000;
+}
+.dialog__button {
+    background: #3155A5;
+    border: 1px solid transparent;
+    min-width: 130px;
+    height: 38px;
+
+    font-family: "Circe";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 25px;
+    text-align: center;
+    text-transform: capitalize;
+
+    color: #FFFFFF;
+}
+.dialog__button.active{
+    background: #14347B;
+}

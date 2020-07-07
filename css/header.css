@@ -1,0 +1,52 @@
+.header{
+    font-size: 17px;
+    padding-top:18px;
+}
+.container{
+	width:1000px;
+	margin:auto;
+	max-width: 100%;
+}
+.bg-white{
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	    padding:0px 20px 14px;
+}
+.logo{}
+
+.header__brief-description{
+	line-height: 1.2em;
+	margin-left: 25px;
+}
+
+.header__registration{
+    padding-top: 11px;
+}
+
+.btn{
+	background: #3155a5;
+	border: none;
+	color:#f9fafc;
+	padding: 9px 24px;   
+}
+.btn:hover{
+	background:#a09393;
+	-webkit-transition: 0.3s;
+	-o-transition: 0.3s;
+	transition: 0.3s;
+	cursor: pointer;
+}
+.header__btn-registration{
+	margin-left: 12px;
+}
+
+.background-green{
+	width: 100%;
+	background-color:#0abe38;
+	padding: 3px 0px;
+	
+}
+
+
+
