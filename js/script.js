@@ -10,35 +10,24 @@ $(function(){
 });
 
 
-// purchace block toggle
+// burger menu
+// breakpoint = 995px;
+let mainMenu = document.querySelector('.main-menu');
+let menuTrigger = document.querySelector('.main-menu__trigger'); 
+let menuOpen = false;
 
-let clickArrow = document.querySelector(".purchase__arrow"); 
-let purchaseBlockOpen = false;
+menuTrigger.onclick = function() {
 
-clickArrow.onclick = function() {
-       if(purchaseBlockOpen === false){
-              purchaseBlockOpen = true;   
-
-              let openPurchaseBlock = gsap.timeline();
-              openPurchaseBlock.to(".purchase__arrow", {duration: .2, rotation: 180})
-                     .to(".purchase__block", {duration: .2, height: 170})
-                     .to(".purchase__line", {duration: .01, height: 85})
-                     
-
-       } else if (purchaseBlockOpen){
-              purchaseBlockOpen = false;
-              let height = document.querySelector('.purchase__description').offsetHeight;
-              let block = document.querySelector('.purchase__block').offsetHeight;
-              let line = 90;
+       if (menuOpen === false){
+              menuOpen = true;
+              let openMenu = gsap.timeline();
+              openMenu.to(".main-menu", {duration: .2, display: 'block', autoAlpha: 1})
+                    
               
-              let totalHeight = height + block + line;
-
-
-              let closePurchaseBlock = gsap.timeline();
-              closePurchaseBlock.to(".purchase__arrow", {duration: .2, rotation: 0})
-                     .to(".purchase__block", {duration: .2, height: totalHeight})
-                     .to(".purchase__line", {duration: .2, height: 70})
-                     
+       } else if (menuOpen){
+              menuOpen = false;
+              let closeMenu = gsap.timeline();
+              closeMenu.to(".main-menu", {duration: .2, display: 'none', autoAlpha: 0})
        }
 }
 
