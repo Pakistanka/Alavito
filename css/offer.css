@@ -1,18 +1,5 @@
 .main {
-	/* background-image: url("./../images/1088.jpg");
-	background-size: cover;
-	background-position: center; */
-
-  /* height: 100vh; */
-	/* width: 100vw; */
 	/* overflow-x: hidden; */
-
-	/* -webkit-filter: grayscale(100%);
-  -moz-filter: grayscale(100%);
-  -ms-filter: grayscale(100%);
-  -o-filter: grayscale(100%);
-  filter: grayscale(100%);
-  filter: gray; */
 }
 
 .main-background__image{
@@ -37,6 +24,7 @@
 		background-color: var(--white);
 		height: 100%;
 		display: flex;
+		position: relative;
 	}
 	.main-content {
 		width: 100%;
