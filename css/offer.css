@@ -58,13 +58,24 @@
 	.purchase-header-button{
 		min-width: 130px;
 		height: 36px;
-		background: #14347B;
+		background: #3155a5;
 		border: transparent;
 
 		display: flex;
-    align-items: center;
+    	align-items: center;
 		justify-content: center;
 		margin-left: 10px;
+
+		cursor: pointer;
+	}
+	.purchase-header-button:hover {
+		background: #a09393;
+		-webkit-transition: 0.3s;
+		-o-transition: 0.3s;
+		transition: 0.3s;
+	}
+	.purchase-header-button:active{
+		background: #14347B;
 	}
 	.purchase__text{
 		font-family: "Circe";

@@ -32,6 +32,16 @@
 	color: #FFFFFF;
 }
 
+
+.search-submit__button:hover {
+	background: #a09393;
+	-webkit-transition: 0.3s;
+	-o-transition: 0.3s;
+	transition: 0.3s;
+}
+.search-submit__button:active {
+	background: #14347B;
+}
 .adv-search__label input,
 .adv-search__table {
 	border: 1px solid #8C8C8C;
@@ -66,6 +76,11 @@
 	display: flex;
 	flex-direction: column;
 }
+
+/* .wide-search::after {
+	content: "";
+
+} */
 
 /*  */
 .hide {

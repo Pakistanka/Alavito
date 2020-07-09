@@ -18,7 +18,7 @@
 
 .header__brief-description{
 	line-height: 1.2em;
-	margin-left: 25px;
+	margin: 1em;
 }
 
 .header__registration{
@@ -39,7 +39,7 @@
 	cursor: pointer;
 }
 .header__btn-registration{
-	margin-left: 12px;
+	margin-right: 12px;
 }
 
 .background-green{
@@ -49,5 +49,11 @@
 	
 }
 
+
+@media (max-width: 768px) {
+	.header__brief-description {
+		margin: 1em 0em;
+	}
+}
 
 
