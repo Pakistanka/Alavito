@@ -440,7 +440,7 @@ z-index: 11;
 	.logo {width: 51%;}
 	.logo img{width: 100px;height: 90px;}
 	.menu-list {padding: 5px 0;}
-	ul li{padding: 6px 10px;font-size:15px;text-align: center;}
+	ul li{font-size:15px;text-align: center;}
 	h1 {font-size: 30.9px;}
 	.main-h1 {width: 475px;}
 	.middle-text {font-size: 19px;}

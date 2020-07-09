@@ -1,6 +1,7 @@
 .header{
     font-size: 17px;
-    padding-top:18px;
+	padding-top:18px;
+	background-color: white;
 }
 .container{
 	width:1000px;

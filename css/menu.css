@@ -100,8 +100,9 @@ color: #fff;
 .main-menu {
 	width: 235px;
 	background-color: var(--grey);
-	height: 100%;
+	min-height: 100%;
 	padding: 35px;
+	
 }
 	.main-menu__list{
 		list-style: none;
@@ -116,7 +117,7 @@ color: #fff;
 		font-weight: 800;
 		font-size: 16px;
 		line-height: 35px;
-
+		text-align: inherit;
 		text-transform: uppercase;
 
 
@@ -127,3 +128,48 @@ color: #fff;
 	.main-menu__elem .active {
 		color: #14347B;
 	}
+
+
+	.main-menu__trigger{
+		position: absolute;
+		width: 60px;
+		height: 60px;
+		background-color: #0abe38;
+		border-radius: 0 0 80px 0;
+	}
+
+	.main-menu__trigger{
+		display: none;
+		z-index: 10;
+	}
+
+	.main-menu__trigger-span{
+		width: 26px;
+		height: 4px;
+		background-color: #fff;
+	}
+
+	.main-content{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+
+
+@media only screen and (max-width: 995px) {
+	.main-menu {
+		display: none;
+		position: absolute;
+		z-index: 2;
+		
+		width: 280px;
+    	padding: 35px 35px 35px 80px;
+	}
+
+	.main-menu__trigger{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		padding: 5px 15px 15px 10px;
+	}
+}

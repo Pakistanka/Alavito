@@ -3,6 +3,7 @@
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
+	
 }
 
 .footer-gray a,.footer-gray-dark a{
@@ -30,6 +31,7 @@ font-size: 14px;
 min-width: 55%;
 position: relative;
 padding-bottom: 175px;
+z-index: 10;
 }
 
 .footer-gray::after{

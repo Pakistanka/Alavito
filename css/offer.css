@@ -1,11 +1,11 @@
 .main {
-	background-image: url("./../images/1088.jpg");
+	/* background-image: url("./../images/1088.jpg");
 	background-size: cover;
-	background-position: center;
+	background-position: center; */
 
   /* height: 100vh; */
 	/* width: 100vw; */
-	overflow-x: hidden;
+	/* overflow-x: hidden; */
 
 	/* -webkit-filter: grayscale(100%);
   -moz-filter: grayscale(100%);
@@ -14,9 +14,20 @@
   filter: grayscale(100%);
   filter: gray; */
 }
+
+.main-background__image{
+	width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    position: fixed;
+    top: 0px;
+	background-image: url("./../images/1088.jpg");
+	background-size: cover;
+	background-position: center;
+}
 	.main-background {
 		background-color: rgba(255, 255, 255, 0.7);
-		height: 100vh;
+		/* height: 100vh; */
 		display: flex;
     align-items: center;
     justify-content: center;
@@ -30,6 +41,9 @@
 	.main-content {
 		width: 100%;
 		margin: 25px 20px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
 	}
 
 /* ------------------------
@@ -149,6 +163,8 @@
 	.purchase__block{
 		border: 2px solid #8C8C8C;
 		/* padding: 15px; */
+		height: 180px;
+		margin-bottom: 24px;
 
 		position: relative;
 		overflow-y: hidden;
@@ -157,7 +173,7 @@
 	.purchase__line{
 		position: absolute;
     width: 100%;
-    height: 70px;
+    height: 90px;
     background: white;
     /* border: 1px solid black; */
     bottom: 0;
@@ -167,11 +183,13 @@
 		position: absolute;
 		bottom: 25px;
 		right: 25px;
+		transform: rotate(180deg);
 	}
 	.purchase__buttons{
 		position: absolute;
 		bottom: 25px;
 		left: 15px;
+		visibility: hidden;
 	}
 
 /* ------------------------
@@ -279,3 +297,42 @@
 .pagination__link:hover:not(.active) {
   background-color: #ddd;
 } 
+
+.purchase__text{
+	display: block;
+}
+
+@media (max-width: 768px) {
+	.pagination__link{
+		padding: 5px;
+	}
+	.purchase-header-button {
+		min-width: 40px;
+	}
+	.purchase__text{
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 570px) {
+	/* .purchase-header-button {
+		min-width: 40px;
+	} */
+	/* .purchase__text{
+		display: none;
+	} */
+
+	.purchase__bottom-button{
+		width: 80px;
+	}
+
+	.main-content {
+		margin: 25px 0px;
+	}
+	.main-wrapper {
+		width: 100%;
+	}
+	.purchase-top{
+		margin: 10px 20px;
+	}
+}

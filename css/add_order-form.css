@@ -12,12 +12,14 @@
     padding: 5px;
     margin: 10px 0;
 }
+
 .form-line {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    margin-top: 15px;
+    margin: 15px auto 0px;
 }
+
 .form__label {
     display: flex;
     flex-direction: column;
@@ -30,6 +32,7 @@
     line-height: 21px;
 
 }
+
 .form__label input,
 .form__label select {
     height: 38px;
@@ -45,11 +48,13 @@
     font-size: 16px;
     line-height: 21px;
 }
+
 .form-line__small {
     width: 30%;
     display: flex;
     justify-content: space-between;
 }
+
 .form-line__small .form__label {
     display: flex;
     width: 45%;
@@ -58,9 +63,10 @@
 
 .form__textarea {
     width: 100%;
-    margin-top: 30px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
     padding: 10px;
+    margin: 30px auto;
+    display: flex;
 
     font-family: "Circe";
     font-style: normal;
@@ -72,6 +78,7 @@
 .form__buttons {
     display: flex;
 }
+
 .form__button {
     min-width: 100px;
     height: 36px;
@@ -83,4 +90,28 @@
     align-items: center;
     justify-content: center;
     margin: 20px 10px 0px 0px;
+}
+
+@media only screen and (max-width: 680px) {
+    .form-line {
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .form__label{
+        width: 80%;
+    }
+    .form-line__small {
+        width: 80%;
+    }
+    .purchase__top {
+        display: flex;
+        justify-content: center;
+    }
+    .form__buttons {
+        justify-content: center;
+    }
+    .form__textarea {
+        width: 80%;
+    }
 }
