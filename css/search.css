@@ -264,3 +264,20 @@
 		width: 80px;
 	}
 }
+
+
+@media only screen and (max-width: 432px) {
+
+	.adv-search__title_1,
+	.adv-search__title {
+		margin-left: 0px;
+	}
+
+	.adv-search__table {
+		margin: 5px 0px;
+	}
+
+	.tabset>label{
+		padding: 15px 8px;
+	}
+}
