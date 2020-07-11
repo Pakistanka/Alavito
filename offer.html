@@ -57,9 +57,36 @@
 					<div class="header__brief-description">
 						ОНЛАЙН ПЛОЩАДКА<br>
 						ДЛЯ ПРОВЕДЕНИЯ ТОРГОВ<br>
-						СРЕДИ МАЛОГО И СРЕДНЕГО БИЗНЕСА</div>
+						СРЕДИ МАЛОГО И СРЕДНЕГО БИЗНЕСА
+					</div>
 
-				</div>
+					
+					</div>
+
+					<div class="header__wrap--mobile">
+						<div class="header__userI">
+							<div class="header__userI_line">
+								<img class="header__userI_icon" src="images/icon_man.png" alt="User">
+								<div class="header__userI-text">Вы вошли как: Закупщик ООО “Ромашка”</div>
+								<div class="header__userI-text-mini">Закупщик ООО “Ромашка”</div>
+							</div>
+							<div class="header__userI_line">
+								<img class="header__userI_icon" src="images/icon_wallet.png" alt="Wallet">
+								<div class="header__userI-text">Ваш баланс: 1000 рублей</div>
+								<div class="header__userI-text-mini">1000 рублей</div>
+							</div>
+						</div>
+	
+	
+						<div class="header__registration">
+							<a class="btn header__btn-registration" href="#">Выйти</a>
+							<!-- <a class="btn header__btn-registration" href="#">Регистрация</a>
+							<a class="btn header__btn-registration" href="#">Вход</a> -->
+						</div>
+					</div>
+
+		
+
 				<div id="mobile-btn">
 					<div class="btn-menu">
 						<span></span>
@@ -67,10 +94,7 @@
 						<span></span>
 					</div>
 				</div>
-				<div class="header__registration row">
-					<a class="btn header__btn-registration" href="#">Регистрация</a>
-					<a class="btn header__btn-registration" href="#">Вход</a>
-				</div>
+			
 			</div>
 
 		</div>
@@ -90,6 +114,7 @@
 
 					</nav>
 				</div>
+
 			</div>
 		</div>
 		<div class="main-menu__trigger">
@@ -124,7 +149,7 @@
 				</aside>
 				<section class="main-content purchase">
 					<div class="purchase-top">
-						<button class="purchase__button">Добавить закупку</button>
+						<button class="purchase__button"  data-fancybox data-src="#trueModal" data-modal="true" href="javascript:;">Добавить закупку</button>
 						
 						<div class="purchase__block purchase__block--js">
 							<div class="purchase__top-block">
@@ -242,9 +267,9 @@
 									</svg>
 								</div>
 							</div>
-							<div class="purchase__center">
+							<!-- <div class="purchase__center">
 								<h2 class="purchase__center-title">Заголовок</h2>
-							</div>
+							</div> -->
 						</div>
 
 						<div class="purchase__center">
@@ -283,11 +308,66 @@
 							
 
 							<div class="purchase__line">
-								<div class="purchase__buttons">
+								<!-- <div class="purchase__buttons">
 									<button class="purchase__bottom-button">Кнопка</button>
 									<button class="purchase__bottom-button">Кнопка</button>
 									<button class="purchase__bottom-button disabled">Кнопка</button>
+								</div> -->
+								<div class="purchase__arrow">
+									<svg width="35" height="20" viewBox="0 0 35 20" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M16.1091 0.543026L0.805733 15.6926C0.451498 16.043 0.256348 16.5108 0.256348 17.0095C0.256348 17.5082 0.451498 17.976 0.805733 18.3264L1.93246 19.442C2.66665 20.168 3.85992 20.168 4.59299 19.442L17.4438 6.72055L30.309 19.4561C30.6632 19.8065 31.1354 20 31.639 20C32.143 20 32.6153 19.8065 32.9698 19.4561L34.0962 18.3405C34.4505 17.9898 34.6456 17.5223 34.6456 17.0236C34.6456 16.5249 34.4505 16.0571 34.0962 15.7067L18.7789 0.543026C18.4235 0.191805 17.9491 -0.00110435 17.4447 3.8147e-06C16.9384 -0.00110435 16.4642 0.191805 16.1091 0.543026Z"
+											fill="#C9C5C5" />
+									</svg>
+									<svg width="35" height="20" viewBox="0 0 35 20" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M16.1091 0.543026L0.805733 15.6926C0.451498 16.043 0.256348 16.5108 0.256348 17.0095C0.256348 17.5082 0.451498 17.976 0.805733 18.3264L1.93246 19.442C2.66665 20.168 3.85992 20.168 4.59299 19.442L17.4438 6.72055L30.309 19.4561C30.6632 19.8065 31.1354 20 31.639 20C32.143 20 32.6153 19.8065 32.9698 19.4561L34.0962 18.3405C34.4505 17.9898 34.6456 17.5223 34.6456 17.0236C34.6456 16.5249 34.4505 16.0571 34.0962 15.7067L18.7789 0.543026C18.4235 0.191805 17.9491 -0.00110435 17.4447 3.8147e-06C16.9384 -0.00110435 16.4642 0.191805 16.1091 0.543026Z"
+											fill="#E8E8E8" />
+									</svg>
 								</div>
+							</div>
+
+							
+						</div>
+
+						<div class="purchase__block">
+							<div class="purchase__top-block">
+								<div class="purchase__header">
+									<h2 class="purchase__title">#56 название</h2>
+									<div class="purchase-header__buttons">
+										
+										<button class="purchase-header-button">
+											<span class="purchase__text">Кнопка</span>
+										</button>
+									</div>
+								</div>
+								<div class="purchase__lists">
+									<div class="purchase__list">
+										<span class="purchase__lists-elem">
+											<span class="purchase__type">Тип:</span>
+											<span>Информация</span>
+										</span>
+									
+									</div>
+									<div class="purchase__list">
+										<span class="purchase__lists-elem">
+											<span class="purchase__type">Тип:</span>
+											<span>Информация</span>
+										</span>
+										
+									</div>
+								</div>
+							</div>
+							
+
+							<div class="purchase__line">
+								<!-- <div class="purchase__buttons">
+									<button class="purchase__bottom-button">Кнопка</button>
+									<button class="purchase__bottom-button">Кнопка</button>
+									<button class="purchase__bottom-button disabled">Кнопка</button>
+								</div> -->
 								<div class="purchase__arrow">
 									<svg width="35" height="20" viewBox="0 0 35 20" fill="none"
 										xmlns="http://www.w3.org/2000/svg">
@@ -339,64 +419,9 @@
 
 							<div class="purchase__line">
 								<div class="purchase__buttons">
+									<!-- <button class="purchase__bottom-button">Кнопка</button>
 									<button class="purchase__bottom-button">Кнопка</button>
-									<button class="purchase__bottom-button">Кнопка</button>
-									<button class="purchase__bottom-button disabled">Кнопка</button>
-								</div>
-								<div class="purchase__arrow">
-									<svg width="35" height="20" viewBox="0 0 35 20" fill="none"
-										xmlns="http://www.w3.org/2000/svg">
-										<path
-											d="M16.1091 0.543026L0.805733 15.6926C0.451498 16.043 0.256348 16.5108 0.256348 17.0095C0.256348 17.5082 0.451498 17.976 0.805733 18.3264L1.93246 19.442C2.66665 20.168 3.85992 20.168 4.59299 19.442L17.4438 6.72055L30.309 19.4561C30.6632 19.8065 31.1354 20 31.639 20C32.143 20 32.6153 19.8065 32.9698 19.4561L34.0962 18.3405C34.4505 17.9898 34.6456 17.5223 34.6456 17.0236C34.6456 16.5249 34.4505 16.0571 34.0962 15.7067L18.7789 0.543026C18.4235 0.191805 17.9491 -0.00110435 17.4447 3.8147e-06C16.9384 -0.00110435 16.4642 0.191805 16.1091 0.543026Z"
-											fill="#C9C5C5" />
-									</svg>
-									<svg width="35" height="20" viewBox="0 0 35 20" fill="none"
-										xmlns="http://www.w3.org/2000/svg">
-										<path
-											d="M16.1091 0.543026L0.805733 15.6926C0.451498 16.043 0.256348 16.5108 0.256348 17.0095C0.256348 17.5082 0.451498 17.976 0.805733 18.3264L1.93246 19.442C2.66665 20.168 3.85992 20.168 4.59299 19.442L17.4438 6.72055L30.309 19.4561C30.6632 19.8065 31.1354 20 31.639 20C32.143 20 32.6153 19.8065 32.9698 19.4561L34.0962 18.3405C34.4505 17.9898 34.6456 17.5223 34.6456 17.0236C34.6456 16.5249 34.4505 16.0571 34.0962 15.7067L18.7789 0.543026C18.4235 0.191805 17.9491 -0.00110435 17.4447 3.8147e-06C16.9384 -0.00110435 16.4642 0.191805 16.1091 0.543026Z"
-											fill="#E8E8E8" />
-									</svg>
-								</div>
-							</div>
-
-							
-						</div>
-
-						<div class="purchase__block">
-							<div class="purchase__top-block">
-								<div class="purchase__header">
-									<h2 class="purchase__title">#56 название</h2>
-									<div class="purchase-header__buttons">
-										
-										<button class="purchase-header-button">
-											<span class="purchase__text">Кнопка</span>
-										</button>
-									</div>
-								</div>
-								<div class="purchase__lists">
-									<div class="purchase__list">
-										<span class="purchase__lists-elem">
-											<span class="purchase__type">Тип:</span>
-											<span>Информация</span>
-										</span>
-									
-									</div>
-									<div class="purchase__list">
-										<span class="purchase__lists-elem">
-											<span class="purchase__type">Тип:</span>
-											<span>Информация</span>
-										</span>
-										
-									</div>
-								</div>
-							</div>
-							
-
-							<div class="purchase__line">
-								<div class="purchase__buttons">
-									<button class="purchase__bottom-button">Кнопка</button>
-									<button class="purchase__bottom-button">Кнопка</button>
-									<button class="purchase__bottom-button disabled">Кнопка</button>
+									<button class="purchase__bottom-button disabled">Кнопка</button> -->
 								</div>
 								<div class="purchase__arrow">
 									<svg width="35" height="20" viewBox="0 0 35 20" fill="none"
@@ -519,6 +544,17 @@
 		</nav>
 		<div class="close"></div>
 	</div>
+	<div class="grid">
+	  
+		<div style="display: none;max-width:600px;" id="trueModal">
+		  <p class="close-button"><button data-fancybox-close class="">&#10008;</button></p>
+		  <h2>I'm a modal!</h2>
+		  <p>You can close me only by pressing custom button below.</p>
+		  <p>It would also be possible to prevent closing using `beforeClose` callback.</p>
+
+		</div>
+		
+	  </div>
 	<script type="text/javascript" src="js/script.js">
 	</script>
 	<script type="text/javascript" src="js/offer.js">
