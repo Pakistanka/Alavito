@@ -124,6 +124,12 @@ color: #fff;
 	}
 	.main-menu__elem a {
 		color: #7B7B7B;
+		text-decoration: none;
+	}
+	.main-menu__elem a:hover {
+		color: var(--blue);
+	} {
+		color: #7B7B7B;
 	}
 	.main-menu__elem .active {
 		color: #14347B;
